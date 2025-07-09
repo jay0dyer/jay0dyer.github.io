@@ -1,0 +1,116 @@
+.image-container {
+  position: relative; /* Essential for positioning children */
+  width: 100%; /* Or a fixed width, but 100% is good for responsiveness */
+  padding-bottom: 66.62%; /* This creates a 16:9 aspect ratio (height = width * 0.5625) */
+  /* Or a fixed height, but padding-bottom is often better for responsive images */
+  background-image: url('images/projector.png');
+  background-size: contain; /* Or 'contain', depending on desired scaling behavior */
+  background-position: center center; /* Center the background image */
+  background-repeat: no-repeat;
+  overflow: hidden; /* To ensure points don't spill outside if they are larger than expected */
+}
+
+.point {
+  position: absolute;
+}
+
+.point img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Image fills its .point container's width */
+  height: 100%; /* Image fills its .point container's height */
+  object-fit: contain; /* Scales down to fit, maintaining its own aspect ratio within the container */
+                       /* 'cover' would fill the container, potentially cropping the image */
+  display: block;
+}
+
+.projector_button {
+  cursor: pointer;
+  height: 15%;
+  width: 17.5%;
+  top: 58.5%;
+  left: 74.7%;
+  opacity: 1;
+  z-index: 99;
+}
+
+
+.projectorslide {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 40%; /* Image fills its .point container's width */
+  height: 30%; /* Image fills its .point container's height */
+  object-fit: contain; /* Scales down to fit, maintaining its own aspect ratio within the container */
+                       /* 'cover' would fill the container, potentially cropping the image */
+  display: none;
+  opacity: 0.75;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 0.75}
+}
+
+.artgallery {
+  font-family: 'Courier New', monospace;
+  width: 28%;
+  float: left;
+  background: white;
+  margin: 1%;
+  padding: 1%;
+}
+
+.autoscale {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.artgallery:hover {
+   box-shadow: 5px 10px;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+a:hover{
+  color: #0000ff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li::first-letter{
+   color: #00ffff;
+}
+
+.footerDiv{
+  float: left;
+  font-family: 'Courier New', monospace;
+  background: white;
+  margin: 1%;
+  padding: 1%;
+  opacity: 0.6;
+}
+
+.footerDiv:hover {
+  transition: opacity 1s;
+  opacity: 1;
+  box-shadow: 5px 10px;
+}
+
+.containerIntro h1, .containerIntro h2 {
+    font-family: 'Courier New', monospace;
+    display: inline;
+}
+
