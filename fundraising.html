@@ -3,44 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Fundraising</title>
-    <script src="fun.js"></script>
+    <script src="global.js"></script>
     <link rel="stylesheet" href="fundraising.css">
 </head>
-<body style="background-image: url('images/background.png'); ">
+<body id="body" style="background-image: url('images/background.png'); ">
 <!-- just giving id pinkAndBlack -->
 
 
 <div class="image-container" id="background">
-    <div class="point switchboard" onclick="myFunction()"></div>
+    <div class="point switchboard" onclick="switchboardbutton()"></div>
 </div>
 
 
-<footer>
-    <div class="footerDiv">
-    <div class="containerIntro">
-        <h1>Hello,</h1>
-        <h2> having trouble navigating my website?</h2>
-    </div>
-
-    <p> Explore the image by hovering your mouse over different elements to highlight them.
-        Clicking any highlighted element will take you to a related page.
-        For an overview, use the navigation tree below. </p>
-
-
-        <ul><a href="index.html"> Homepage </a>
-        <li><a href="art.html">  └ Art </a></li>
-        <li><a href="aboutMe.html">  └ About me </a></li>
-          <li><a href="fundraising.html">  └ Charity </a></li>
-        <li><a href="contact.html">  └ Contact </a>
-            <ul>
-            <li><a href="mailto:jay0dyer@gmail.com"> └ Mail to jay0dyer@gmail.com</a></li>
-                <li><a href="https://github.com/jay0dyer"> └ My github</a></li>
-                <li><a href="https://coff.ee/jay0dyer"> └ buy me a coffee</a></li>
-            </ul>
-        </li>
-    </ul>
-    </div>
-  </footer>
+<nav-footer></nav-footer>
 
 
 </body>
