@@ -1,0 +1,37 @@
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+a:hover{
+  color: #0000ff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li::first-letter{
+   color: #00ffff;
+}
+
+.footerDiv{
+  font-family: 'Courier New', monospace;
+  background: white;
+  margin: 1%;
+  padding: 1%;
+  opacity: 0.6;
+}
+
+.footerDiv:hover {
+  transition: opacity 1s;
+  opacity: 1;
+  box-shadow: 5px 10px;
+}
+
+.containerIntro h1, .containerIntro h2 {
+    font-family: 'Courier New', monospace;
+    display: inline;
+}
+
